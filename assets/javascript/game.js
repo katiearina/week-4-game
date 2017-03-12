@@ -78,12 +78,14 @@ $(".medallion-images").click(function() {
 	generateNewScore();
 	console.log(scoreCounter);
 
+	// If score matches target, you win!
 	if (hitCount === scoreCounter) {
 		alert("Woo!");
 		wins++;
 		resetGame();
 	}
 
+	// If score goes above target, you lose!
 	else if (scoreCounter >= hitCount) {
 		alert("Oh No! You've gone too far!");
 		losses++;

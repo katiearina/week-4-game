@@ -34,6 +34,17 @@ h4 {
 	text-align: center;
 }
 
+.win-loss {
+	margin-top: 25px;
+	min-height: 100px;
+	background-color: cyan;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #ff0072;
+	outline: 3px solid #e60067;
+	text-align: left;
+}
+
 #hit-count {
 	text-decoration: none;
 }
@@ -63,16 +74,16 @@ html, body {
 	min-height: 100%;
 	height: auto;
 	/* Negative indent footer by its height */
-	margin: 0px auto -40px;
+	margin: 0px auto -45px;
 	/* Pad bottom by footer height */
-	padding: 0px 0px 40px 0px;
+	padding: 0px 0px 45px 0px;
 }
 
 /* Sticky footer styling! */
 #footer {
 	/* Must match margin-bottom in .wrapper CSS */
 	/* Set the fixed height of the footer here */
-	height: 40px;
+	height: 45px;
 	color: cyan;
 	background-color: blueviolet;
 	border-top-style: solid;
