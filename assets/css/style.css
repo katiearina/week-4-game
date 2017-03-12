@@ -1,0 +1,42 @@
+body {
+    background-image: url("../images/zelda_items.jpg");
+    background-color: blueviolet;
+}
+
+#title-section {
+	background-color: greenyellow;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #ff0072;
+	outline: 3px solid #e60067;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+h2, h3 {
+/*	font-size: 28px;*/
+	margin: 10px;
+}
+
+#random-number, #current-score {
+	margin-top: 25px;
+	min-height: 100px;
+	background-color: cyan;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #ff0072;
+	outline: 3px solid #e60067;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#game-section {
+	margin-top: 30px;
+	min-height: 500px;
+	background-color: greenyellow;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #ff0072;
+	outline: 3px solid #e60067;
+}
