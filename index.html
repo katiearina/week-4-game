@@ -3,7 +3,7 @@
 
 <head>
 <!-- Page Title -->
-<title>Legend of Zelda - Medallion Counter!</title>
+<title>Legend of Zelda - Medallion Collector Game!</title>
 
 <!-- Triforce Favicon -->
 <link href="./assets/images/triforce.ico" rel="icon" type="image/x-icon">
@@ -52,8 +52,9 @@
 		</div>
 		
 			<!-- First Column -->
-			<div class="col-lg-2 col-md-2 col-sm-2" id="random-number">
+			<div class="col-lg-2 col-md-2 col-sm-2 random-number">
 				<h4>Number to Hit!</h4>
+				<h2 id="hit-count"></h2>
 			<!-- End First Column -->
 			</div>
 
@@ -62,8 +63,9 @@
 			</div>
 
 			<!-- Second Column -->
-			<div class="col-lg-2 col-md-2 col-sm-2" id="current-score">
+			<div class="col-lg-2 col-md-2 col-sm-2 current-score">
 				<h4>Current Score:</h4>
+				<h2 id="score-counter"></h2>
 			<!-- End Second Column -->
 			</div>
 
@@ -84,6 +86,54 @@
 		
 			<!-- First Column -->
 			<div class="col-lg-6 col-md-6 col-sm-6" id="game-section">
+
+				<!-- Subrow 1 -->
+				<div class="row">
+
+					<!-- Subcolumn 1L -->
+					<div class="col-lg-6 col-md-6 col-sm-6" id="image-1">
+
+						<!-- Medallion 1L -->
+						<img src="./assets/images/Forest_Medallion.png" class="img-responsive medallion-images" id="medallion-1">
+
+					<!-- End Subcolumn 1L -->
+					</div>
+
+					<!-- Subcolumn 1R -->
+					<div class="col-lg-6 col-md-6 col-sm-6" id="image-2">
+
+						<!-- Medallion 1R -->
+						<img src="./assets/images/Fire_Medallion.png" class="img-responsive medallion-images" id="medallion-2">
+
+					<!-- End Subcolumn 1R -->
+					</div>
+
+				<!-- End Subrow 1 -->
+				</div>
+
+				<!-- Subrow 2 -->
+				<div class="row">
+
+					<!-- Subcolumn 2L -->
+					<div class="col-lg-6 col-md-6 col-sm-6" id="image-3">
+
+						<!-- Medallion 2L -->
+						<img src="./assets/images/Spirit_Medallion.png" class="img-responsive medallion-images" id="medallion-3">
+					
+					<!-- End Subcolumn 2L -->
+					</div>
+
+					<!-- Subcolumn 2R -->
+					<div class="col-lg-6 col-md-6 col-sm-6" id="image-4">
+
+						<!-- Medallion 2R -->
+						<img src="./assets/images/Water_Medallion.png" class="img-responsive medallion-images" id="medallion-4">
+
+					<!-- End Subcolumn 2R -->
+					</div>
+
+				<!-- End Subrow 2 -->
+				</div>
 			
 			<!-- End First Column -->
 			</div>
@@ -99,7 +149,26 @@
 <!-- End Page Content Container -->
 </div>
 
+<!-- Sticky Footer! -->
+<footer id="footer">
+
+    <!-- Footer Text -->
+    <p class="p-footer-main">
+    	Medallion Collector Game &mdash; &copy; Katie Geckle 2017
+    </p>
+        <p class="p-footer-external">
+        <a href="http://scottsilloz.blogspot.com/2012/08/zelda-items-wallpaper-and-more.html" target="_blank">
+        Background image (&#8220;Zelda Items&#8221;) &mdash; &copy; Scott Balmer 2012</a>
+
+<!-- End Sticky Footer -->
+</footer>
+
 </body>
 
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	
+	<!-- Script -->
+	<script src="./assets/javascript/game.js"></script>
 
 </html>
