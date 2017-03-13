@@ -1,8 +1,10 @@
+/* Body styling */
 body {
     background-image: url("../images/zelda_items.jpg");
     background-color: blueviolet;
 }
 
+/* Styling for header/title area */
 #title-section {
 	background-color: greenyellow;
 	border-style: solid;
@@ -14,16 +16,39 @@ body {
 	margin-top: 10px;
 }
 
+/* Styling for reset button area */
+.reset-section {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* Styling for reset button */
+#button-start {
+	font-weight: bold;
+	background-color: #36ebbe;
+	border-color: #0093ab;
+	color: #958be3;
+}
+
+/* Styling for reset button on hover */
+#button-start:hover {
+	color: #00a53f;
+	background-color: #ff8100;
+	border-color: #c53d2d;
+}
+
+/* Styling for H2 and H3 elements */
 h2, h3 {
-/*	font-size: 28px;*/
 	margin: 10px;
 }
 
-h4 {
+/* To underline specific elements */
+.underline {
 	text-decoration: underline;
 }
 
-.random-number, .current-score {
+/* Styling for three scoring boxes */
+.random-number, .current-score, .win-loss {
 	margin-top: 25px;
 	min-height: 100px;
 	background-color: cyan;
@@ -31,31 +56,22 @@ h4 {
 	border-width: 3px;
 	border-color: #ff0072;
 	outline: 3px solid #e60067;
+}
+
+/* Text Styling for points boxes */
+.random-number, .current-score {
 	text-align: center;
 }
 
-.win-loss {
-	margin-top: 25px;
-	min-height: 100px;
-	background-color: cyan;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #ff0072;
-	outline: 3px solid #e60067;
-/*	text-align: left;*/
-}
-
+/* Styling for text in win/loss box */
 .win-loss-text {
 	margin-left: 0px;
 	text-align: right;
 }
 
-#hit-count {
-	text-decoration: none;
-}
-
+/* Styling for main medallion content area */
 #game-section {
-	margin: 25px 0px 35px 0px;
+	margin: 25px 0px 25px 0px;
 	min-height: 500px;
 	background-color: greenyellow;
 	border-style: solid;
@@ -64,6 +80,7 @@ h4 {
 	outline: 3px solid #e60067;
 }
 
+/* Margins set on medallions */
 #image-1, #image-2, #image-3, #image-4 {
 	margin: 10px 0px 10px 0px;
 }
@@ -107,18 +124,20 @@ html, body {
 	margin: 5px 0px 0px 0px;
 }
 
-/* Sticky Footer Credit Text Styling*/
+/* Sticky Footer Credit Text Styling */
 .p-footer-external {
 	font-size: 11px;
 	margin: 0px 0px 5px 0px;
 }
 
+/* Sticky Footer Credit Text Link Styling */
 .p-footer-external a {
 	text-decoration: none;
-	color: cyan;
+	color: greenyellow;
 }
 
+/* Sticky Footer Credit Text Link Styling on Hover */
 .p-footer-external a:hover {
 	text-decoration: none;
-	color: greenyellow;
+	color: cyan;
 }

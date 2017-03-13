@@ -2,17 +2,18 @@
 <html>
 
 <head>
-<!-- Page Title -->
-<title>Legend of Zelda - Medallion Collector Game!</title>
 
-<!-- Triforce Favicon -->
-<link href="./assets/images/triforce.ico" rel="icon" type="image/x-icon">
+	<!-- Page Title -->
+	<title>Legend of Zelda - Medallion Collector Game!</title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Triforce Favicon -->
+	<link href="./assets/images/triforce.ico" rel="icon" type="image/x-icon">
 
-<!-- CSS reference -->
-<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- CSS reference -->
+	<link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
@@ -31,13 +32,11 @@
 		
 			<!-- First Column -->
 			<div class="col-lg-8 col-md-8 col-sm-8" id="title-section">
-			
-				<h2>Legend of Zelda</h2>
-				<h3>Medallion Counter!</h3>
+				<!-- Input from JS only -->
 			<!-- End First Column -->
 			</div>
 
-				<!-- Intentionally Blank Column -->
+		<!-- Intentionally Blank Column -->
 		<div class="col-lg-2 col-md-2 col-sm-2">
 		</div>
 
@@ -53,8 +52,15 @@
 		
 			<!-- First Column -->
 			<div class="col-lg-2 col-md-2 col-sm-2 random-number">
-				<h4>Number to Hit!</h4>
-				<h2 id="hit-count"></h2>
+				
+				<!-- Target Number Title -->
+				<h4 class="underline">Number to Hit!</h4>
+
+				<!-- Target Number (Random) -->
+				<h2 id="hit-count">
+					<!-- Input from JS only -->
+				</h2>
+
 			<!-- End First Column -->
 			</div>
 
@@ -64,8 +70,15 @@
 
 			<!-- Second Column -->
 			<div class="col-lg-2 col-md-2 col-sm-2 current-score">
-				<h4>Current Score:</h4>
-				<h2 id="score-counter"></h2>
+
+				<!-- Current Player Score Title -->
+				<h4 class="underline">Current Score</h4>
+
+				<!-- Current Player Score Input -->
+				<h2 id="score-counter">
+					<!-- Input from JS only -->
+				</h2>
+
 			<!-- End Second Column -->
 			</div>
 
@@ -76,28 +89,56 @@
 			<!-- Second Column -->
 			<div class="col-lg-2 col-md-2 col-sm-2 win-loss">
 				
+				<!-- Subrow 1 -->
 				<div class="row">
 
+					<!-- Subcolumn 1 -->
 					<div class="col-lg-6 col-md-6 col-sm-6">
-					<h3 class="win-loss-text">Wins:</h3>
+
+						<!-- Wins Heading -->
+						<h3 class="win-loss-text">Wins:</h3>
+
+					<!-- End Subcolumn 1 -->
 					</div>
 
+					<!-- Subcolumn 2 -->
 					<div class="col-lg-6 col-md-6 col-sm-6">
-					<h3 class="win-loss-text" id="win-count"></h3>
-					</div>
 
+						<!-- Win Count -->
+						<h3 class="win-loss-text" id="win-count">
+							<!-- Input from JS only -->
+						</h3>
+
+					<!-- Subcolumn 2 -->
+					</div>
+				
+				<!-- End Subrow 1 -->
 				</div>
 
+				<!-- Subrow 2 -->
 				<div class="row">
 
+					<!-- Subcolumn 1 -->
 					<div class="col-lg-6 col-md-6 col-sm-6">
-					<h3 class="win-loss-text">Losses:</h3>
+
+						<!-- Loss Heading -->
+						<h3 class="win-loss-text">Losses:</h3>
+
+					<!-- End Subcolumn 1 -->
 					</div>
 
+					<!-- Subcolumn 2 -->
 					<div class="col-lg-6 col-md-6 col-sm-6">
-					<h3 class="win-loss-text" id="loss-count"></h3>
+
+						<!-- Loss Count -->
+						<h3 class="win-loss-text" id="loss-count">
+							<!-- Input from JS only -->
+						</h3>
+
+					<!-- End Subcolumn 2 -->
 					</div>
 
+				<!-- End Subrow 2 -->
 				</div>
 
 			<!-- End Second Column -->
@@ -172,11 +213,36 @@
 			<!-- End First Column -->
 			</div>
 
-				<!-- Intentionally Blank Column -->
+		<!-- Intentionally Blank Column -->
 		<div class="col-lg-3 col-md-3 col-sm-3">
 		</div>
 
 	<!-- End Third Row -->
+	</div>
+
+	<!-- Fourth Row -->
+	<div class="row">
+
+		<!-- Intentionally Blank Column -->
+		<div class="col-lg-5 col-md-5 col-sm-5">
+		</div>
+		
+			<!-- First Column -->
+			<div class="col-lg-2 col-md-2 col-sm-2 reset-section">
+		        
+		        <!-- Here's a button if you want to reset the game to 0 wins/0 losses -->
+		        <button type="button" onclick="gameStart()" class="btn btn-warning" id="button-start">
+		            Reset Game!
+		        </button>
+
+			<!-- End First Column -->
+			</div>
+
+		<!-- Intentionally Blank Column -->
+		<div class="col-lg-5 col-md-5 col-sm-5">
+		</div>
+
+	<!-- End Fourth Row -->
 	</div>
 
 
@@ -190,9 +256,13 @@
     <p class="p-footer-main">
     	Medallion Collector Game &mdash; &copy; Katie Geckle 2017
     </p>
-        <p class="p-footer-external">
-        <a href="http://scottsilloz.blogspot.com/2012/08/zelda-items-wallpaper-and-more.html" target="_blank">
-        Background image (&#8220;Zelda Items&#8221;) &mdash; &copy; Scott Balmer 2012</a>
+
+	<!-- Footer Citation Text -->
+	<p class="p-footer-external">
+		<a href="http://scottsilloz.blogspot.com/2012/08/zelda-items-wallpaper-and-more.html" target="_blank">
+			Background image (&#8220;Zelda Items&#8221;) &mdash; &copy; Scott Balmer 2012
+		</a>
+	</p>
 
 <!-- End Sticky Footer -->
 </footer>
