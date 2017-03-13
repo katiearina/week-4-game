@@ -42,7 +42,12 @@ h4 {
 	border-width: 3px;
 	border-color: #ff0072;
 	outline: 3px solid #e60067;
-	text-align: left;
+/*	text-align: left;*/
+}
+
+.win-loss-text {
+	margin-left: 0px;
+	text-align: right;
 }
 
 #hit-count {

@@ -1,16 +1,24 @@
 //---------------------------------------------------------------------------
 // VARIABLE DECLARATIONS!
 
+// Set variables for each medallion (total of 4)
 var medallion1 = $("#medallion-1");
 var medallion2 = $("#medallion-2");
 var medallion3 = $("#medallion-3");
 var medallion4 = $("#medallion-4");
 
+// Set variable for target point count
 var hitCount;
 
+// Set player score at start
 var scoreCounter = 0;
 
+// Set variable for medallion points
 var medallionValue;
+
+var winSound = new Audio("../sounds/WW_Get_Item.wav");
+
+var loseSound = new Audio("../sounds/OOT_DekuNut_Freeze.wav");
 
 //---------------------------------------------------------------------------
 // FUNCTION DECLARATIONS!
@@ -43,10 +51,28 @@ function generateNewScore() {
 	$("#score-counter").html(scoreCounter);
 }
 
+function writeWins() {
+	$("#win-count").html(wins);
+}
+
+function playWinSound() {
+	winSound.play();
+}
+
+function playLoseSound() {
+	loseSound.play();
+}
+
+function writeLosses() {
+	$("#loss-count").html(losses);
+}
+
 // This function starts game on page load or on reset game button press.
 function gameStart() {
 	wins = 0;
 	losses = 0;
+	writeWins();
+	writeLosses();
 	generateHitCount();
 	generateImagePoints();
 	resetScoreCounter();
@@ -80,15 +106,17 @@ $(".medallion-images").click(function() {
 
 	// If score matches target, you win!
 	if (hitCount === scoreCounter) {
-		alert("Woo!");
 		wins++;
+		writeWins();
+		playWinSound();
 		resetGame();
 	}
 
 	// If score goes above target, you lose!
 	else if (scoreCounter >= hitCount) {
-		alert("Oh No! You've gone too far!");
 		losses++;
+		writeLosses();
+		playLoseSound();
 		resetGame();
 	}
 
